@@ -19,7 +19,7 @@ class list{
         head=NULL;
         tail=NULL;
     }
-    void push_backt(int val){
+    void push_back(int val){
         node*newNode= new node(val);//dynamic
         // node*newNode(val);//static
         if(tail==NULL){
@@ -54,12 +54,12 @@ class list{
 };
 int main(){
     list ll;
-    ll.push_backt(3);
-    ll.push_backt(5);
-    ll.push_backt(2);
+    ll.push_back(3);
+    ll.push_back(5);
+    ll.push_back(2);
     ll.print();
-    ll.push_backt(6);
-    ll.push_backt(10);
+    ll.push_back(6);
+    ll.push_back(10);
     ll.print();
     ll.reverse();
     ll.print();
